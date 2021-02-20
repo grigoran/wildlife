@@ -1,11 +1,160 @@
 body {
   background-color: #cccccc;
 }
-.sh-2 {
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*header start*/
+
+.header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header__logo-text {
+  margin-left: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 480px;
+}
+
+.nav__link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 60px;
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.nav__button {
+  background-color: transparent;
+  border: 2px solid #cd6326;
+  box-sizing: border-box;
+  padding: 10px 23px;
+  border-radius: 5px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #f7f7f7;
+
+  transition: ease-out 0.15s;
+}
+
+.nav__button:hover {
+  background-color: #cd6326;
+}
+.nav__button:active,
+.nav__button:focus {
+  border-color: #8f5613;
+  background-color: #8f5613;
+  outline: none;
+}
+
+/*header end*/
+
+/*survival start*/
+
+.survival {
+  background-image: url("/img/survival-background.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: #02160b;
+  height: 779px;
+}
+
+.donation {
+  position: relative;
+  top: 200px;
+}
+
+.survival__paragraph {
+  margin-top: 50px;
+  width: 274px;
+}
+
+.survival__button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #f7f7f7;
+
+  background-color: #cd6326;
+  border: none;
+
+  box-sizing: border-box;
+  padding: 17px 42px;
+  border-radius: 5px;
+  margin-top: 49px;
+
+  transition: ease-out 0.15s;
+}
+
+.survival__button:hover {
+  background-color: #e39128;
+}
+
+.survival__button:active,
+.survival__button:focus {
+  background-color: #8f5613;
+  outline: none;
+}
+
+/*survival end*/
+
+.latest-articles {
+  height: 1368px;
+  background-color: #cccccc;
+}
+
+.latest-articles__header {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.subheader {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 36px;
   color: #666666;
+
+  margin-top: 20px;
 }

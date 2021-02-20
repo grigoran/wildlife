@@ -3,16 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>solution</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Header h1-orange</h1>
-    <h2>Header h2-dark</h2>
-    <div class="sh-2">Subheader sh-2-grey</div>
-    <h3>Header h-3 dark</h3>
-    <h4>Header h-4 light</h4>
+    <header class="header">
+      <h1>rolling scopes school wildlife</h1>
+      <div class="wrapper header__wrapper">
+        <a href="/" class="header__logo">
+          <img src="svg/logo.svg" alt="logo" class="header__logo-image" />
+          <div class="header__logo-text">wildlife</div>
+        </a>
+        <nav class="nav">
+          <ul class="nav__items">
+            <li><a href="" class="nav__link">Blog</a></li>
+            <li><a href="" class="nav__link">Contacts</a></li>
+            <li>
+              <a href=""><img src="svg/search.svg" alt="search" /></a>
+            </li>
+            <li class="nav__item">
+              <button class="nav__button">Sign in</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="survival">
+        <div class="wrapper">
+          <article class="donation">
+            <h2 class="survival__header">Survival</h2>
+            <p class="survival__paragraph">
+              What this means is that we exist to help protect our environment
+              and do in numbers of ways. You can save the planet by donation.
+            </p>
+            <button class="survival__button">Donate</button>
+          </article>
+        </div>
+      </section>
+      <section class="latest-articles">
+        <div class="wrapper">
+          <div class="latest-articles__header">
+            <h3>Latest articles</h3>
+            <h3 class="subheader">Breaking news from the wild</h3>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
