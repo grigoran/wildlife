@@ -103,7 +103,7 @@ body {
 
 .survival__paragraph {
   margin-top: 50px;
-  width: 274px;
+  max-width: 274px;
 }
 
 .survival__button {
@@ -157,4 +157,41 @@ body {
   color: #666666;
 
   margin-top: 20px;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.slider__images {
+  display: flex;
+  flex-basis: 1020px;
+  justify-content: space-between;
+}
+
+.slider__figure {
+  position: relative;
+}
+
+.slider__caption {
+  position: absolute;
+  top: 247px;
+  width: 100%;
+  text-align: center;
+}
+
+.caption-text {
+  margin-top: 10px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
+  color: #f7f7f7;
 }
