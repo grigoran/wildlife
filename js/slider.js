@@ -8,16 +8,20 @@ let slider_width = imgs_count * 360;
 
 imgs.style.width = slider_width + "px";
 
-rightArrow.addEventListener("click", () => {
-  if (slider_offset > -slider_width + 3 * offset_value) {
+function moveRight() {
+  if (slider_offset > -slider_width + 3 * offset_value)
     slider_offset -= offset_value;
-    imgs.style["margin-left"] = slider_offset + "px";
-  }
-});
+  else slider_offset = 0;
+  imgs.style["margin-left"] = slider_offset + "px";
+}
+function moveLeft() {
+  if (slider_offset < 0) slider_offset += offset_value;
+  else slider_offset = -slider_width + 3 * offset_value;
+  imgs.style["margin-left"] = slider_offset + "px";
+}
 
-leftArrow.addEventListener("click", () => {
-  if (slider_offset < 0) {
-    slider_offset += offset_value;
-    imgs.style["margin-left"] = slider_offset + "px";
-  }
-});
+rightArrow.addEventListener("click", moveRight);
+
+leftArrow.addEventListener("click", moveLeft);
+
+//let autoSlider = setInterval(moveRight, 10000);
