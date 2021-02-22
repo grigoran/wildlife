@@ -49,6 +49,14 @@ body {
   display: flex;
   flex-basis: 480px;
 }
+@media (max-width: 640px) {
+  .nav__items {
+    flex-direction: column-reverse;
+  }
+  .header__wrapper {
+    align-items: flex-start;
+  }
+}
 
 .nav__items {
   display: flex;
