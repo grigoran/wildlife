@@ -210,6 +210,9 @@ body {
   .slider__frame {
     flex-basis: 300px;
   }
+  .slider {
+    justify-content: space-evenly;
+  }
 }
 
 .slider__images {
