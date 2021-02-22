@@ -6,17 +6,17 @@ let slider_offset = 0;
 let offset_value = 360;
 let slider_width = imgs_count * 360;
 
-imgs.style.width = slider_width + "px";
+//imgs.style.width = slider_width + "px";
 
 function moveRight() {
-  if (slider_offset > -slider_width + 3 * offset_value)
+  if (slider_offset > -slider_width + offset_value)
     slider_offset -= offset_value;
   else slider_offset = 0;
   imgs.style["margin-left"] = slider_offset + "px";
 }
 function moveLeft() {
   if (slider_offset < 0) slider_offset += offset_value;
-  else slider_offset = -slider_width + 3 * offset_value;
+  else slider_offset = -slider_width + offset_value;
   imgs.style["margin-left"] = slider_offset + "px";
 }
 
