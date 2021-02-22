@@ -224,6 +224,15 @@ body {
   margin-right: 60px;
 }
 
+.slider__img {
+  cursor: pointer;
+  transition: filter ease 125ms;
+}
+
+.slider__img:hover {
+  filter: brightness(75%);
+}
+
 .slider__caption {
   position: absolute;
   top: 247px;
