@@ -371,9 +371,28 @@ body {
   flex-basis: 240px;
 }
 
-.social__link {
+.social li{
+  width: 40px;
   height: 40px;
 }
+
+.social__facebook{
+  background-image: url(/svg/facebook-ico.svg);
+}
+
+.social__inst{
+  background-image: url(/svg/inst-ico.svg);
+}
+
+.social__p{
+  background-image: url(/svg/p-ico.svg);
+}
+
+.social__yt{
+  background-image: url(/svg/yt-ico-op.svg);
+  background-repeat: no-repeat;
+}
+
 
 @media (max-width: 1000px) {
   .footer {
