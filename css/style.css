@@ -122,7 +122,7 @@ body {
 
 .survival {
   height: 779px;
-  background-image: url("/img/survival-background.png");
+  background-image: url("../img/survival-background.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-color: #02160b;
@@ -353,7 +353,7 @@ body {
   box-sizing: border-box;
   height: 359px;
 
-  background-image: url("/img/footer-background.jpg");
+  background-image: url("../img/footer-background.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-color: #181617;
@@ -371,28 +371,27 @@ body {
   flex-basis: 240px;
 }
 
-.social li{
+.social li {
   width: 40px;
   height: 40px;
 }
 
-.social__facebook{
-  background-image: url(/svg/facebook-ico.svg);
+.social__facebook {
+  background-image: url(../svg/facebook-ico.svg);
 }
 
-.social__inst{
-  background-image: url(/svg/inst-ico.svg);
+.social__inst {
+  background-image: url(../svg/inst-ico.svg);
 }
 
-.social__p{
-  background-image: url(/svg/p-ico.svg);
+.social__p {
+  background-image: url(../svg/p-ico.svg);
 }
 
-.social__yt{
-  background-image: url(/svg/yt-ico-op.svg);
+.social__yt {
+  background-image: url(../svg/yt-ico-op.svg);
   background-repeat: no-repeat;
 }
-
 
 @media (max-width: 1000px) {
   .footer {
